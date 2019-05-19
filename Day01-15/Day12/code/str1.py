@@ -6,7 +6,7 @@ Author: 骆昊
 Date: 2018-03-19
 """
 
-import pyperclip
+# import pyperclip
 
 # 转义字符
 print('My brother\'s name is \'007\'')
@@ -14,8 +14,8 @@ print('My brother\'s name is \'007\'')
 print(r'My brother\'s name is \'007\'')
 
 str = 'hello123world'
-print('he' in str)
-print('her' in str)
+print('he' in str)      # true
+print('her' in str)     # false
 # 字符串是否只包含字母
 print(str.isalpha())
 # 字符串是否只包含字母和数字
@@ -37,6 +37,6 @@ print(email.strip())
 print(email.lstrip())
 
 # 将文本放入系统剪切板中
-pyperclip.copy('老虎不发猫你当我病危呀')
+# pyperclip.copy('老虎不发猫你当我病危呀')
 # 从系统剪切板获得文本
 # print(pyperclip.paste())
