@@ -7,6 +7,7 @@ Date: 2018-03-19
 """
 
 from io import StringIO
+from timeit import default_timer as timer
 
 
 def reverse_str1(str):
@@ -47,13 +48,28 @@ def reverse_str5(str):
 
 if __name__ == '__main__':
     str = 'I love Python'
+    start = timer()
     print(reverse_str1(str))
+    end = timer()
+    print(end - start)
     print(str)
+    start = timer()
     print(reverse_str2(str))
+    end = timer()
+    print(end - start)
     print(str)
+    start = timer()
     print(reverse_str3(str))
+    end = timer()
+    print(end - start)
     print(str)
+    start = timer()
     print(reverse_str4(str))
+    end = timer()
+    print(end - start)
     print(str)
+    start = timer()
     print(reverse_str5(str))
+    end = timer()
+    print(end - start)
     print(str)
